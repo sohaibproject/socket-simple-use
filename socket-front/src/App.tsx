@@ -4,7 +4,7 @@ import { io, Socket } from "socket.io-client";
 import { join } from "path";
 const App = () => {
   // const socket: Socket = io.connect("http://localhost:4444");
-  const socket: Socket = io("https://push-notification.logistix-dz.com/");
+  const socket: Socket = io("http://localhost:4444");
   const [massage, setMassage] = useState<string>("");
   const [reciveMassage, setReciveMassage] = useState<string>("");
   const [room, setRoom] = useState<string>("");
